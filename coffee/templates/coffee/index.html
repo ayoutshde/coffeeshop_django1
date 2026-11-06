@@ -1,0 +1,13 @@
+{% extends "coffee/layout.html" %}
+{% load static %}
+{% block content %}
+<main>
+<section class="hero home"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, tenetur? Манай кофе шофд тавтай морил.</p><h1>{{ heading }}</h1></section>
+<section class="grid2"><article><h2>Дээд зэрэглэлийн кофег <b>хүн бүрт</b></h2><p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus porro inventore voluptatem ratione eum repellat quia et mollitia illum ut!"</p><p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias voluptas, accusantium cupiditate a recusandae deserunt natus consectetur."</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero neque est culpa! Dolores maiores veritatis, voluptatem earum magnam voluptate architecto vel facilis minima aliquid eius inventore.</p></article>
+<img class="photo" src="{% static 'coffee/images/home-image-1.jpg' %}" alt="Кофе"></section>
+<section class="hero dark"><h2 style="font-weight:500">Хамгийн шилдэг үйлчилгээг манайхаас</h2><a class="btn" href="{% url 'coffee:menu' %}">Цэс сонирхох</a></section>
+<section class="reviews"><h2>Манай үйлчлүүлэгчдийн сэтгэгдлээс</h2><div class="review-grid">
+<blockquote><em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, fugiat dolores. A molestiae voluptatum, non mollitia doloremque ducimus ea numquam.</em><strong>John Doe</strong><div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div></blockquote>
+<blockquote><em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, fugiat dolores. A molestiae voluptatum, non mollitia doloremque ducimus ea numquam.</em><strong>Julie</strong><div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div></blockquote></div></section>
+</main>
+{% endblock %}

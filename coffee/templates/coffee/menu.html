@@ -1,0 +1,9 @@
+{% extends "coffee/layout.html" %}
+{% load static %}
+{% block content %}
+<main class="menu-wrap"><img class="photo" src="{% static 'coffee/images/home3.jpg' %}" alt="Кофе"><section><h2>Танд санал болгох цэс</h2>
+{% for item in items %}
+<article class="item"><div><h4>{{ item.name }}</h4><p>{{ description }}</p></div><b>{{ item.price }}</b></article>
+{% endfor %}
+</section></main>
+{% endblock %}

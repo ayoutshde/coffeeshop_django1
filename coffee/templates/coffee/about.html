@@ -1,0 +1,9 @@
+{% extends "coffee/layout.html" %}
+{% load static %}
+{% block content %}
+<main>
+<section class="grid2"><img class="circle" src="{% static 'coffee/images/home-image-2.jpg' %}" alt="Кофе">
+<div>{% for step in steps %}<article class="step"><span>{{ step.number }}</span><h3>{{ step.title }}</h3><p>{{ step.text }}</p></article>{% endfor %}</div></section>
+<section class="hero about2"><h3 style="color:var(--main);font-weight:500;font-size:22px">Аз жаргалтай мөчийг</h3><h1>кофеноос</h1><p style="color:#fff">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum iste, veritatis qui enim nam ullam. Iusto, neque atque.</p></section>
+</main>
+{% endblock %}
